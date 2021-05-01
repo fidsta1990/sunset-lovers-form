@@ -287,3 +287,20 @@ body::before {
     background: #fff;
   }
 }
+
+@media (max-width: 575px) {
+  .form-wrap .footer {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .slide-container {
+    height: 80vh;
+  }
+}
+
+@media (min-width: 667px) {
+  .form-wrap .form {
+    overflow-y: scroll;
+  }
+}
