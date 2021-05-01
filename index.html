@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <!-- ion icons -->
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+    <!-- scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./assets/scripts/app.js" defer></script>
+    <title>SUNSET || LOVERS</title>
+  </head>
+  <body>
+    <section class="slide-container" data-aos="fade-up">
+      <div
+        class="slide active"
+        style="
+          background-image: url('https://images.pexels.com/photos/258112/pexels-photo-258112.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1920');
+        "
+      ></div>
+
+      <div
+        class="slide"
+        style="
+          background-image: url('https://images.pexels.com/photos/1183021/pexels-photo-1183021.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1920');
+        "
+      ></div>
+
+      <div
+        class="slide"
+        style="
+          background-image: url('https://images.pexels.com/photos/1174732/pexels-photo-1174732.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1920');
+        "
+      ></div>
+
+      <article class="form-wrap" data-aos="fade-right" data-aos-delay="1500">
+        <!-- title -->
+        <div class="title">
+          <h2>
+            SUNSET<br />
+            <span>LOVERS</span>
+          </h2>
+        </div>
+        <!-- form -->
+        <form class="form" id="form">
+          <div class="form-title">
+            <h2>
+              Join us and become <br />
+              one of SUNSET <span>LOVERS</span>
+            </h2>
+            <p>Wait no more and create your account today:</p>
+          </div>
+
+          <p id="error"></p>
+          <!-- single input -->
+
+          <input
+            type="text"
+            id="email"
+            class="form-control"
+            name="email"
+            placeholder="name@gmail.com"
+          />
+
+          <!-- single input -->
+
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            name="password"
+            placeholder="Password"
+          />
+
+          <!-- single input -->
+
+          <a href="#" class="forgot">Forgot your password</a>
+
+          <div class="form-btn__container">
+            <button type="submit" class="login form-btn">Login</button>
+            <!-- <button type="submit" class="signup form-btn">Sign Up</button> -->
+          </div>
+        </form>
+
+        <!-- footer -->
+        <footer class="footer">
+          <p>Contact Us</p>
+          <p>Terms and Conditions</p>
+        </footer>
+      </article>
+
+      <button class="arrow" id="arrow" data-aos="fade-up" data-aos-delay="1000">
+        <ion-icon name="caret-forward-outline"></ion-icon>
+      </button>
+
+      <div class="dots" data-aos="fade-left" data-aos-delay="1500">
+        <div class="dot active" data-slide="one"></div>
+        <div class="dot" data-slide="two"></div>
+        <div class="dot" data-slide="three"></div>
+      </div>
+    </section>
+
+    <script>
+      AOS.init({
+        delay: 500, // values from 0 to 3000, with step 50ms
+        duration: 400, // values from 0 to 3000, with step 50ms
+        easing: "ease", // default easing for AOS animations
+        once: true, // whether animation should happen only once - while scrolling down
+        anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+      });
+    </script>
+  </body>
+</html>
